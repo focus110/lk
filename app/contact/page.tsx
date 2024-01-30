@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Instagram, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -8,22 +8,22 @@ import profileImg from "../projects/Assets/PHOTO_CONTACT.png";
 
 const socials = [
   {
-    icon: <Twitter size={20} />,
-    href: "https://twitter.com/chronark_",
-    label: "Twitter",
-    handle: "@chronark_",
+    icon: <Instagram size={20} />,
+    href: "https://Instagram.com/Lukasdumont_",
+    label: "Instagram",
+    handle: "@Lukasdumont_",
   },
   {
     icon: <Mail size={20} />,
-    href: "mailto:dev@chronark.com",
+    href: "mailto:Lukasdumont@icloud.com",
     label: "Email",
-    handle: "dev@chronark.com",
+    handle: "Lukasdumont@icloud.com",
   },
   {
-    icon: <Github size={20} />,
-    href: "https://github.com/chronark",
-    label: "Github",
-    handle: "chronark",
+    icon: <Twitter size={20} />,
+    href: "https://Twitter.com/Lukasdumont_",
+    label: "Twitter",
+    handle: "Twitter",
   },
 ];
 
@@ -32,9 +32,9 @@ export default function Example() {
     <div className="lg:px-[130px] bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
       <div className="flex flex-col md:flex-row gap-4 pt-[170px] px-16">
-        <Image className="w-[300px] " src={profileImg} alt={`profile image`} />
+        <Image className="w-[300px] h-[300px] object-cover" src={profileImg} alt={`profile image`} />
 
-        <div className="">
+        <div className="md:ml-5">
           <h4 className="text-white text-4xl font-bold md:text-6xl mb-2">Lukas dunmont</h4>
           <p className="text-white">
             Realisateur de documentaire,clips & spots publicitaires
@@ -60,7 +60,7 @@ export default function Example() {
                   {s.icon}
                 </span>{" "}
                 <div className="z-10 flex flex-col items-center">
-                  <span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
+                  <span className="text-[12px] lg:text-[15px] font-medium duration-150 xl:text-2xl text-zinc-200 group-hover:text-white font-display">
                     {s.handle}
                   </span>
                   <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">

@@ -7,6 +7,7 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import Carousel from "./Carousel";
 import CasapringGIF from "./Assets/CASAPING.gif";
+import CorporateGIF from "./Assets/CORPORATE.gif";
 import clipsGIF from "./Assets/CLIPS.gif";
 
 import SMASH from "./Assets/SMASH.jpeg";
@@ -86,7 +87,7 @@ export default function ProjectsPage() {
   return (
     <div className="relative pb-16 overflow-hidden">
       <Navigation />
-      <div className="px-6 pt-20 mx-auto space-y-8 lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+      <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="relative grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <div
             data-aos="fade-up"
@@ -120,18 +121,17 @@ export default function ProjectsPage() {
           </div>
         </div>
         <div className="relative overflow-hidden w-full pb-14">
-          <div className="hidden w-full h-px md:block bg-zinc-800" />
           <Image
             src={clipsGIF}
             alt="Clips projects"
-            className="w-[200px] h-[200px] relative z-[2]"
+            className="m-10 w-[200px] h-[200px] relative z-[2]"
           />
 
           <div
             data-aos="fade-down"
-            className="absolute z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-green-500 w-[100px] md:w-[150px] h-screen -mt-[400px]"
+            className="absolute z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#00FF00] w-[100px] md:w-[150px] h-screen -mt-[400px]"
           ></div>
-          <div className="relative z-[2] flex flex-wrap gap-4 justify-center">
+          <div className="relative z-[2] grid grid-cols-4 gap-4">
             {music.map((music, index) => (
               <Link
                 href={music.url}
@@ -166,11 +166,9 @@ export default function ProjectsPage() {
           <div className="flex flex-col md:flex-row items-center md:gap-24">
             <div className="flex flex-col items-center relative z-10">
               <Image
-                className="w-[300px] md:w-[400px] h-[300px] self-center"
-                src="/assets/CORPORATE.gif"
+                src={CorporateGIF}
                 alt="CORPORATE gif"
-                width={300}
-                height={300}
+                className="w-[300px] md:w-[400px] h-[450px] self-center"
               />
               <div className="flex items-center mb-4">
                 <h3

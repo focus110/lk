@@ -106,8 +106,7 @@ const Carousel = () => {
                 src={card.src}
                 alt="Casaping Youtube"
                 className="w-full bg-cover object-fit"
-                // width={300}
-                // height={300}
+                
               />
               <div
                 style={{
