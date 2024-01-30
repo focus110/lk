@@ -31,6 +31,8 @@ const Video: React.FC<VideoProps> = ({ currentVideoIndex }) => {
   //   </video>
   // ));
 
+  // Section ancienne
+
   return videos.map((video, index) => (
     <iframe
       key={video.id}
