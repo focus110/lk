@@ -1,0 +1,16 @@
+#carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }  
+  #carousel div.selected {
+    transform: scale(1.4);
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  #carousel div.hide {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  
