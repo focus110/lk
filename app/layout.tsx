@@ -6,23 +6,16 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Lukasdunmont",
+    template: "%s | Lukasdunmont",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Montage video pro",
   openGraph: {
-    title: "chronark.com",
+    title: "Lukasdunmont",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
-    images: [
-      {
-        url: "https://chronark.com/og.png",
-        width: 1920,
-        height: 1080,
-      },
-    ],
+      "Montage video pro",
+    url: "https://Lukasdunmont.fr",
+    siteName: "Lukasdunmont",
     locale: "en-US",
     type: "website",
   },
@@ -38,7 +31,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Lukasdunmont",
     card: "summary_large_image",
   },
   icons: {
