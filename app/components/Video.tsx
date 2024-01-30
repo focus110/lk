@@ -42,7 +42,6 @@ const Video: React.FC<VideoProps> = ({ currentVideoIndex }) => {
       src={video.src}
       // width="500"
       // height="890"
-      frameborder="0"
       allow="autoplay; fullscreen; picture-in-picture"
       title="Vanadis_beautysalon"
     ></iframe>
