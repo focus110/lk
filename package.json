@@ -34,6 +34,7 @@
     "@opentelemetry/api": "1.6.0",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.10",
+    "@types/aos": "^3.0.7",
     "@types/node": "^20.8.4",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.13",

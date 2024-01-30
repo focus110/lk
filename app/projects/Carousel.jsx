@@ -8,27 +8,27 @@ const cards = [
   {
     title: "Les rappeurs qui courent dans les champs...",
     url: "https://youtu.be/2kOF7jJLY6o?si=GK1pCl3bX5JLs3vn",
-    src: './assets/CASAPING08.jpeg',
+    src: "/assets/CASAPING08.jpeg",
   },
   {
     title: `J'avais 1 objectif : c'était de faire du bif !`,
     url: "https://youtu.be/4YnpWBj55cE?si=njeakTGLIs0NdcyT",
-    src: './assets/CASAPING09.jpeg',
+    src: "/assets/CASAPING09.jpeg",
   },
   {
     title: `Mes inspirations c'était Kanye et Booba !`,
     url: "https://youtu.be/wUUxE42CotA?si=7cWDghXEARLgO6te",
-    src: './assets/CASAPING10.jpeg',
+    src: "/assets/CASAPING10.jpeg",
   },
   {
     title: "Des cours de chant en tant que rappeur ?",
     url: "https://youtu.be/OHVwnDGmnnI?si=bowWqHWow2ZAFEGC",
-    src: './assets/CASAPING11.jpeg',
+    src: "/assets/CASAPING11.jpeg",
   },
   {
     title: `Comment s'entourer et créer une communauté dans la musique ?`,
     url: "https://youtu.be/BFmqLMGrYLo?si=Tq-SGDyKk7s2eiMq",
-    src: './assets/CASAPING12.jpeg',
+    src: "/assets/CASAPING12.jpeg",
   },
 ];
 
@@ -61,7 +61,7 @@ const Carousel = () => {
   };
 
   return (
-    <section className="flex items-center">
+    <section className="flex justify-between items-center">
       <button
         onClick={() => move("prev")}
         className="relative z-10 text-white bg-gray-300 bg-opacity-40 rounded-full p-2 -mr-12"
@@ -82,7 +82,7 @@ const Carousel = () => {
         </svg>
       </button>
 
-      <div className="" id="carousel">
+      <div className="flex justify-between" id="carousel">
         {visibleImages().map((card, index) => (
           <Link
             className={`${
@@ -102,10 +102,12 @@ const Carousel = () => {
                   index === 0 ? "" : index === 2 ? "" : "hidden"
                 } overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] z-[1] bg-opacity-50`}
               ></div>
-              <Image
+              <img
                 src={card.src}
                 alt="Casaping Youtube"
-                className="w-full"
+                className="w-full bg-cover object-fit"
+                // width={300}
+                // height={300}
               />
               <div
                 style={{
