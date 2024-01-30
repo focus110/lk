@@ -3,37 +3,32 @@ import "./carousel.css";
 import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
-import card_08 from "./assets/CASAPING08.jpeg";
-import card_09 from "./assets/CASAPING09.jpeg";
-import card_10 from "./assets/CASAPING10.jpeg";
-import card_11 from "./assets/CASAPING11.jpeg";
-import card_12 from "./assets/CASAPING12.jpeg";
 
 const cards = [
   {
     title: "Les rappeurs qui courent dans les champs...",
     url: "https://youtu.be/2kOF7jJLY6o?si=GK1pCl3bX5JLs3vn",
-    src: card_08,
+    src: './assets/CASAPING08.jpeg',
   },
   {
     title: `J'avais 1 objectif : c'était de faire du bif !`,
     url: "https://youtu.be/4YnpWBj55cE?si=njeakTGLIs0NdcyT",
-    src: card_09,
+    src: './assets/CASAPING09.jpeg',
   },
   {
     title: `Mes inspirations c'était Kanye et Booba !`,
     url: "https://youtu.be/wUUxE42CotA?si=7cWDghXEARLgO6te",
-    src: card_10,
+    src: './assets/CASAPING10.jpeg',
   },
   {
     title: "Des cours de chant en tant que rappeur ?",
     url: "https://youtu.be/OHVwnDGmnnI?si=bowWqHWow2ZAFEGC",
-    src: card_11,
+    src: './assets/CASAPING11.jpeg',
   },
   {
     title: `Comment s'entourer et créer une communauté dans la musique ?`,
     url: "https://youtu.be/BFmqLMGrYLo?si=Tq-SGDyKk7s2eiMq",
-    src: card_12,
+    src: './assets/CASAPING12.jpeg',
   },
 ];
 
