@@ -6,7 +6,7 @@ import { allProjects } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import Carousel from "./Carousel";
-import CasapringGIF from "./Assets/CASAPING.gif";
+import CasapingGIF from "./Assets/CASAPING.gif";
 import CorporateGIF from "./Assets/CORPORATE.gif";
 import clipsGIF from "./Assets/CLIPS.gif";
 
@@ -91,7 +91,7 @@ export default function ProjectsPage() {
         <div className="relative grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <div
             data-aos="fade-up"
-            className="bg-yellow-600 w-[100px]  md:h-[80%] absolute md:bottom-0"
+            className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"
           ></div>
           <Card>
             <Link href={`${featured.url}`} target="_blank">
@@ -113,9 +113,9 @@ export default function ProjectsPage() {
             <Carousel />
             <div className="flex justify-center">
               <Image
-                src={CasapringGIF}
+                src={CasapingGIF}
                 alt="Casapring GIF"
-                className="h-[300px] max-w-[250px]"
+                className="h-[400px] max-w-[350px]"
               />
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function ProjectsPage() {
           <Image
             src={clipsGIF}
             alt="Clips projects"
-            className="m-10 w-[200px] h-[200px] relative z-[2]"
+            className="m-10 w-[300px] h-[300px] relative z-[2]"
           />
 
           <div

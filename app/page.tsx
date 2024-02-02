@@ -27,25 +27,25 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
+        quantity={300}
       />
       <div className="flex flex-col md:flex-row items-center">
         <Image
           src={`/assets/PHOTO.gif`}
           alt="Clips projects"
-          className="relative z-[2]"
+          className="relative z-[2] lg:h-[400px] lg:w-[400px]"
           width={200}
-          height={200}
+          height={400}
         />
-        <h1 className="z-10 text-4xl text-transparent duration-1000 bg-[#3C49FF] cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+        <h1 className="z-10 text-4xl text-transparent duration-1000 bg-[#0006FF] cursor-default animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
           lukasdumont_
         </h1>
         <Image
           src={`/assets/COUREUR.gif`}
           alt="Clips projects"
-          className="relative z-[2]"
+          className="relative z-[2] lg:h-[400px] lg:w-[400px]"
           width={200}
-          height={200}
+          height={400}
         />
       </div>
 
