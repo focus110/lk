@@ -115,14 +115,14 @@ const Carousel = () => {
                 className="h-[100px] bg-black relative py-3 px-2 md:px-4 md:py-5 bg-gradient-to-br opacity-100 via-zinc-100/10 transition duration-1000 group-hover:opacity-50"
               >
                 <div
-                  className="blur-[16px]"
                   style={{
                     position: "absolute",
                     top: 0,
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    // backdropFilter: "blur(16px)",
+                    WebkitBackdropFilter: "blur(16px)",
+                    backdropFilter: "blur(16px)",
                   }}
                 ></div>
                 <h3 className="relative text-white text-sm md:text-[15px] lg:text-[12px] xl:text-[15px] stroke-black stroke-1 shadow-sm">
