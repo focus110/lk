@@ -25,9 +25,11 @@ export const Card: React.FC<PropsWithChildren> = ({ children }) => {
       style={{
         boxShadow:
           "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+        WebkitBoxShadow:
+          "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
       }}
       onMouseMove={onMouseMove}
-      className="z-[10] bg-black overflow- relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 max-h-[350px]"
+      className="z-[10] bg-black overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 max-h-[350px]"
     >
       <div className="pointer-events-none">
         <div className="absolute inset-0 z-0 transition duration-1000 [mask-image:linear-gradient(black,transparent)]" />

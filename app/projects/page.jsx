@@ -70,6 +70,11 @@ export default function ProjectsPage() {
   ];
   const [currentVideo, setCurrentVideo] = useState(4);
 
+  const slideVariants = {
+    hidden: { y: 100, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
+
   const handleVideoChange = (newVideo) => {
     setCurrentVideo("");
     setCurrentVideo(newVideo);
@@ -91,10 +96,10 @@ export default function ProjectsPage() {
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="relative flex flex-col-reverse lg:grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <div
-            data-aos="fade-up"
+            data-aos="fade-left"
             className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"
           ></div>
-          <div className=" relative z-[10] ml-8">
+          <div className=" relative z-[10] md:ml-8">
             <Card>
               <Link href={`${featured.url}`} target="_blank">
                 <article className="relative w-full h-full p-4 md:p-8">
@@ -133,7 +138,7 @@ export default function ProjectsPage() {
 
           <div
             data-aos="fade-down"
-            className="absolute z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#00FF00] w-[100px] md:w-[150px] h-full sm:h-screen -mt-[640px] sm:-mt-[400px] -ml-10 sm:-ml-0"
+            className="slideFrmD absolute z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#00FF00] w-[100px] md:w-[150px] h-full sm:h-screen -mt-[640px] sm:-mt-[400px] -ml-10 sm:-ml-0"
           ></div>
 
           <div className="relative z-[2] grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
