@@ -231,9 +231,9 @@ export default function ProjectsPage() {
               </div>
             </div>
 
-            <div className="w-full relative mt-24 ">
+            <div className="relative mt-24 ">
               <div
-                data-aos="fade-up"
+                data-aos="fade-left"
                 className="w-[230px] bg-blue-600 h-[400px] absolute -right-16 -top-16 shadow-md"
               ></div>
 
