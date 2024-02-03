@@ -94,21 +94,23 @@ export default function ProjectsPage() {
             data-aos="fade-up"
             className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"
           ></div>
-          <Card>
-            <Link href={`${featured.url}`} target="_blank">
-              <article className="relative w-full h-full p-4 md:p-8">
-                <h2
-                  id="featured-post"
-                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
-                >
-                  {featured.title}
-                </h2>
-                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                  {featured.description}
-                </p>
-              </article>
-            </Link>
-          </Card>
+          <div className=" relative z-[10] ml-8">
+            <Card>
+              <Link href={`${featured.url}`} target="_blank">
+                <article className="relative w-full h-full p-4 md:p-8">
+                  <h2
+                    id="featured-post"
+                    className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
+                  >
+                    {featured.title}
+                  </h2>
+                  <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                    {featured.description}
+                  </p>
+                </article>
+              </Link>
+            </Card>
+          </div>
 
           <div className="flex flex-col-reverse md:flex-col w-full mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
             <Carousel />
@@ -121,7 +123,7 @@ export default function ProjectsPage() {
             </div>
           </div>
         </div>
-        
+
         <div className="relative overflow-hidden w-full pb-14">
           <Image
             src={clipsGIF}
