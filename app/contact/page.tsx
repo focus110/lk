@@ -52,7 +52,7 @@ export default function Example() {
           </div>
         </div>
         <div className="container flex items-center justify-center py-16 px-4 mx-auto">
-          <div className="grid w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-3 lg:gap-0">
+          <div className="grid lg:w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-3 md:gap-16 lg:gap-24">
             {socials.map((s) => (
               <Card>
                 <Link

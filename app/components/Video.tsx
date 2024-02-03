@@ -8,18 +8,20 @@ const Video: React.FC<VideoProps> = ({ currentVideoIndex }) => {
   const videos = [
     {
       id: 1,
-      src: "https://player.vimeo.com/video/908595937?h=6f417fb2cd",
+      src: "https://player.vimeo.com/video/908586077?h=542a5581d3",
     },
     {
       id: 2,
-      src: "https://player.vimeo.com/video/908586077?h=542a5581d3",
+      src: "https://player.vimeo.com/video/908595937?h=6f417fb2cd",
     },
-    { 
+    {
       id: 3,
-      src: "https://player.vimeo.com/video/908584428?h=75307162ae" },
-    { 
-      id: 4, 
-      src: "https://player.vimeo.com/video/908587250?h=db0dbc54ec" },
+      src: "https://player.vimeo.com/video/908584428?h=75307162ae",
+    },
+    {
+      id: 4,
+      src: "https://player.vimeo.com/video/908587250?h=db0dbc54ec",
+    },
   ];
 
   // return videos.map((video, index) => (
