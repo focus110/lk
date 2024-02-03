@@ -21,6 +21,7 @@ import CASABLANCAFREESTYLE from "./Assets/CASABLANCA FREESTYLE.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Video from "../components/Video";
+import Footer from "../components/Footer";
 
 export const revalidate = 60;
 export default function ProjectsPage() {
@@ -85,10 +86,10 @@ export default function ProjectsPage() {
   }, []);
 
   return (
-    <div className="relative pb-16 overflow-hidden">
+    <div className="relative overflow-hidden">
       <Navigation />
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
-        <div className="relative grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
+        <div className="relative flex flex-col-reverse lg:grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <div
             data-aos="fade-up"
             className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"
@@ -109,35 +110,37 @@ export default function ProjectsPage() {
             </Link>
           </Card>
 
-          <div className="flex flex-col w-full mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
+          <div className="flex flex-col-reverse md:flex-col w-full mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
             <Carousel />
-            <div className="flex justify-center">
+            <div className="flex justify-center -mt-16 md:mt-0">
               <Image
                 src={CasapingGIF}
                 alt="Casapring GIF"
-                className="h-[400px] max-w-[350px]"
+                className="w-[300px] -ml-4 md:-ml-0 sm:h-[400px] sm:max-w-[350px] relative z-[10]"
               />
             </div>
           </div>
         </div>
+        
         <div className="relative overflow-hidden w-full pb-14">
           <Image
             src={clipsGIF}
             alt="Clips projects"
-            className="m-10 w-[300px] h-[300px] relative z-[2]"
+            className="sm:m-10 w-[300px] h-[300px] relative z-[2]"
           />
 
           <div
             data-aos="fade-down"
-            className="absolute z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#00FF00] w-[100px] md:w-[150px] h-screen -mt-[400px]"
+            className="absolute z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#00FF00] w-[100px] md:w-[150px] h-full sm:h-screen -mt-[640px] sm:-mt-[400px] -ml-10 sm:-ml-0"
           ></div>
-          <div className="relative z-[2] grid grid-cols-4 gap-4">
+
+          <div className="relative z-[2] grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {music.map((music, index) => (
               <Link
                 href={music.url}
                 target="_blank"
                 key={`${music.title}-${index}`}
-                className="overflow-hidden cursor-pointer w-[300px] rounded-[12px]"
+                className="overflow-hidden cursor-pointer sm:w-[300px] rounded-[12px]"
               >
                 <div className="">
                   <Image
@@ -233,6 +236,7 @@ export default function ProjectsPage() {
           <div></div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
