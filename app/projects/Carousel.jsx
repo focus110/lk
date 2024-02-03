@@ -37,20 +37,16 @@ const Carousel = () => {
   const visibleCards = 3;
 
   const [selected, setSelected] = useState(0);
-
+  
   const move = (direction) => {
     if (direction === "next") {
-      setSelected((prev) => (prev + 1) % (cards.length - visibleCards + 1));
+      setSelected((prev) => (prev + 1) % cards.length);
     } else if (direction === "prev") {
-      setSelected(
-        (prev) =>
-          (prev - 1 + (cards.length - visibleCards + 1)) %
-          (cards.length - visibleCards + 1)
-      );
+      setSelected((prev) => (prev - 1 + cards.length) % cards.length);
     }
   };
-
-  // Fonction pour récupérer uniquement les cartes à afficher
+  
+  // Function to retrieve only the cards to display
   const visibleImages = () => {
     let orderedImages = [];
     for (let i = 0; i < visibleCards; i++) {
@@ -59,7 +55,6 @@ const Carousel = () => {
     }
     return orderedImages;
   };
-
   return (
     <section className="flex justify-between items-center">
       <button
