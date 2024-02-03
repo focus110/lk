@@ -129,7 +129,7 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden w-full pb-14">
+        <div className="relative overflow-hidden w-full pb-14 ">
           <Image
             src={clipsGIF}
             alt="Clips projects"
@@ -231,7 +231,7 @@ export default function ProjectsPage() {
               </div>
             </div>
 
-            <div className="relative mt-24">
+            <div className="w-full relative mt-24 ">
               <div
                 data-aos="fade-up"
                 className="w-[230px] bg-blue-600 h-[400px] absolute -right-16 -top-16 shadow-md"
