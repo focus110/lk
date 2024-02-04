@@ -160,6 +160,7 @@ export default function ProjectsPage() {
                       className="w-full h-14"
                       style={{
                         backdropFilter: "blur(16px)",
+                        WebkitBackdropFilter: "blur(16px)",
                       }}
                     ></div>
                     <div className="text-shadow-lg absolute top-1/2 -translate-y-1/2  z-10 text-white text-base font-bold p-4">
