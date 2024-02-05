@@ -36,6 +36,7 @@ export default function Home() {
           className="relative z-[2] lg:h-[400px] lg:w-[400px]"
           width={200}
           height={400}
+          loading="lazy"
         />
         <h1 className="z-10 text-4xl text-transparent duration-1000 bg-[#0006FF] cursor-default animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
           lukasdumont_
@@ -46,6 +47,7 @@ export default function Home() {
           className="relative z-[2] lg:h-[400px] lg:w-[400px]"
           width={200}
           height={400}
+          loading="lazy"
         />
       </div>
 
