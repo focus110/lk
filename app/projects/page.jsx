@@ -93,14 +93,23 @@ export default function ProjectsPage() {
   return (
     <div className="relative overflow-hidden">
       <Navigation />
-      <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
-        <div className="relative flex flex-col-reverse lg:grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
-          <div
-            className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"
-          ></div>
-          <div className=" relative z-[10] md:ml-8">
+      <div className="px-6 pt-20  mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+        <div className="relative pb-8 grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
+          <div className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"></div>
+          <div className="shadow-xl flex flex-col-reverse w-full border-t border-gray-900/10 lg:border-t-0 md:ml-8">
+            <Carousel />
+            <div className="flex justify-center -mt-16 md:mt-0">
+              <Image
+                src={CasapingGIF}
+                alt="Casapring GIF"
+                className="w-[300px] -ml-4 md:-ml-0 sm:h-[400px] sm:max-w-[350px] relative z-[10]"
+              />
+            </div>
+          </div>
+
+          <div className="relative z-[10] md:ml-16">
             <Card>
-              <div >
+              <div>
                 <article className="relative w-full h-full p-4 md:p-8">
                   <h2
                     id="featured-post"
@@ -114,17 +123,6 @@ export default function ProjectsPage() {
                 </article>
               </div>
             </Card>
-          </div>
-
-          <div className="flex flex-col-reverse md:flex-col w-full mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-            <Carousel />
-            <div className="flex justify-center -mt-16 md:mt-0">
-              <Image
-                src={CasapingGIF}
-                alt="Casapring GIF"
-                className="w-[300px] -ml-4 md:-ml-0 sm:h-[400px] sm:max-w-[350px] relative z-[10]"
-              />
-            </div>
           </div>
         </div>
 
