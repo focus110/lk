@@ -36,8 +36,8 @@ const Carousel = () => {
   // Nombre de cartes à afficher
   const visibleCards = 3;
 
-  const [selected, setSelected] = useState(0);
-  
+  const [selected, setSelected] = useState(3);
+
   const move = (direction) => {
     if (direction === "next") {
       setSelected((prev) => (prev + 1) % cards.length);
@@ -45,7 +45,7 @@ const Carousel = () => {
       setSelected((prev) => (prev - 1 + cards.length) % cards.length);
     }
   };
-  
+
   // Function to retrieve only the cards to display
   const visibleImages = () => {
     let orderedImages = [];
@@ -86,7 +86,8 @@ const Carousel = () => {
                 : index === 2
                 ? "ml-[-50px]"
                 : "relative z-[20]"
-            }  border-gray-500 border-[2px] border-opacity-80 cursor-pointer rounded-[12px] overflow-hidden`}
+            }  border-opacity-80 cursor-pointer rounded-[12px] overflow-hidden`}
+            // border-gray-500 border-[2px]
             href={card.url}
             target="_blank"
             key={`${card.title}-${index}`}
