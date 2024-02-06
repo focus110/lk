@@ -100,19 +100,19 @@ export default function ProjectsPage() {
           ></div>
           <div className=" relative z-[10] md:ml-8">
             <Card>
-              <Link href={`${featured.url}`} target="_blank">
+              <div >
                 <article className="relative w-full h-full p-4 md:p-8">
                   <h2
                     id="featured-post"
                     className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
                   >
-                    {featured.title}
+                    {/* {featured.title} */}
                   </h2>
                   <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                     {featured.description}
                   </p>
                 </article>
-              </Link>
+              </div>
             </Card>
           </div>
 
