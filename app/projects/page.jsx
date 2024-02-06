@@ -127,11 +127,13 @@ export default function ProjectsPage() {
         </div>
 
         <div className="relative overflow-hidden w-full pb-14 ">
-          <Image
-            src={clipsGIF}
-            alt="Clips projects"
-            className="mx-auto sm:m-10 w-[300px] h-[300px] relative z-[2] ml-0 md:ml-[150px]"
-          />
+          <div className="flex w-[50%] justify-center">
+            <Image
+              src={clipsGIF}
+              alt="Clips projects"
+              className="mx-auto sm:m-10 w-[300px] h-[300px] relative z-[2]"
+            />
+          </div>
 
           <div className="absolute z-[1] bottom-0 left-1/2 -translate-x-1/2 bg-[#00FF00] w-[200px] md:w-[150px] h-[110rem] md:h-full"></div>
 
