@@ -91,7 +91,7 @@ export default function ProjectsPage() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden bg-[#080808]">
       <Navigation />
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="relative pb-8 grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
@@ -142,6 +142,12 @@ export default function ProjectsPage() {
                 target="_blank"
                 key={`${music.title}-${index}`}
                 className="overflow-hidden cursor-pointer sm:w-[300px] rounded-[12px]"
+                style={{
+                  boxShadow:
+                    "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.6) 0px 5px 10px",
+                  WebkitBoxShadow:
+                    "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.6) 0px 5px 10px",
+                }}
               >
                 <div className="">
                   <Image
@@ -228,11 +234,15 @@ export default function ProjectsPage() {
 
             <div className="relative mt-24 ">
               <div
-                data-aos="fade-left"
-                className="w-[230px] bg-blue-600 h-[400px] absolute -right-16 -top-16 shadow-md"
+                className="w-[140px] bg-[#0006ff] h-[500px] absolute -right-16 -top-16 shadow-md"
               ></div>
 
-              <Video currentVideoIndex={currentVideo} />
+             <div className="overflow-hidden rounded-[12px]"   style={{
+            boxShadow:
+              "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.6) 0px 5px 10px",
+            WebkitBoxShadow:
+              "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.6) 0px 5px 10px",
+          }}> <Video currentVideoIndex={currentVideo} /></div>
             </div>
           </div>
           <div></div>

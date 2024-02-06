@@ -24,27 +24,14 @@ const Video: React.FC<VideoProps> = ({ currentVideoIndex }) => {
     },
   ];
 
-  // return videos.map((video, index) => (
-  //   <video
-  //     key={video.id}
-  //     className={`video ${
-  //       index + 1 === currentVideoIndex ? "active" : "hidden"
-  //     } w-[250px] h-auto relative z-10 rounded-[12px] shadow-md`}
-  //     controls
-  //   >
-  //     <source className="" src={video.src} type="video/mp4" />
-  //     Your browser does not support the video tag.
-  //   </video>
-  // ));
-
-  // Section ancienne
+ 
 
   return videos.map((video, index) => (
     <iframe
       key={video.id}
       className={`video ${
         index + 1 === currentVideoIndex ? "active" : "hidden"
-      } w-[300px] h-[500px] relative z-10 rounded-[12px] shadow-md`}
+      } w-[300px] h-[500px] relative z-10 rounded-[12px] shadow-md overflow-hidden`}
       src={video.src}
       // width="500"
       // height="890"

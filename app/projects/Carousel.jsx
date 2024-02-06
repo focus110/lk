@@ -56,7 +56,7 @@ const Carousel = () => {
     return orderedImages;
   };
   return (
-    <section className="flex justify-between items-center">
+    <section className="flex justify-between items-center " >
       <button
         onClick={() => move("prev")}
         className="relative z-10 text-white bg-gray-300 bg-opacity-40 rounded-full p-2 -mr-12"
@@ -80,6 +80,12 @@ const Carousel = () => {
       <div className="flex justify-between" id="carousel">
         {visibleImages().map((card, index) => (
           <Link
+          style={{
+            boxShadow:
+              "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.6) 0px 5px 10px",
+            WebkitBoxShadow:
+              "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.6) 0px 5px 10px",
+          }}
             className={`${
               index === 0
                 ? "mr-[-50px]"
