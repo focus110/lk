@@ -93,7 +93,7 @@ export default function ProjectsPage() {
   return (
     <div className="relative overflow-hidden">
       <Navigation />
-      <div className="px-6 pt-20  mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+      <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="relative pb-8 grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <div className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"></div>
           <div className="shadow-xl flex flex-col-reverse w-full border-t border-gray-900/10 lg:border-t-0 md:ml-8">
@@ -133,10 +133,7 @@ export default function ProjectsPage() {
             className="sm:m-10 w-[300px] h-[300px] relative z-[2]"
           />
 
-          <div
-            data-aos="fade-down"
-            className="slideFrmD absolute z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#00FF00] w-[100px] md:w-[150px] h-full sm:h-screen -mt-[640px] sm:-mt-[400px] -ml-10 sm:-ml-0"
-          ></div>
+          <div className="absolute z-[1] bottom-0 left-1/2 -translate-x-1/2 bg-[#00FF00] w-[100px] md:w-[150px] h-[110rem] md:h-full"></div>
 
           <div className="relative z-[2] grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {music.map((music, index) => (
@@ -149,7 +146,7 @@ export default function ProjectsPage() {
                 <div className="">
                   <Image
                     src={music.src}
-                    className="object-cover w-full "
+                    className="object-cover w-full  transition-transform duration-300 transform hover:scale-105"
                     alt="Casaping Youtube"
                   />
                   <div className="relative w-full h-14 transition duration-1000 group-hover:opacity-50 -mt-10">
