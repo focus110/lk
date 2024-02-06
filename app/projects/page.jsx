@@ -107,7 +107,7 @@ export default function ProjectsPage() {
             </div>
           </div>
 
-          <div className="relative z-[10] md:ml-16">
+          <div className="relative z-[10] md:ml-16 md:mt-32">
             <Card>
               <div>
                 <article className="relative w-full h-full p-4 md:p-8">
