@@ -1,5 +1,6 @@
 "use client";
 import { Instagram, Mail, Twitter } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -21,10 +22,10 @@ const socials = [
     handle: "Lukasdumont@icloud.com",
   },
   {
-    icon: <Twitter size={20} />,
+    icon: <FaXTwitter size={20} />,
     href: "https://Twitter.com/Lukasdumont_",
-    label: "Twitter",
-    handle: "Twitter",
+    label: "X",
+    handle: "@Lukasdumont_",
   },
 ];
 

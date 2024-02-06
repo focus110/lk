@@ -94,7 +94,7 @@ export default function ProjectsPage() {
     <div className="relative overflow-hidden bg-[#080808]">
       <Navigation />
       <div className="px-6 mx-auto max-w-7xl lg:px-8 pt-16 md:pt-0">
-        <div className="md:h-screen relative pb-8 grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
+        <div className="relative pb-8 grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <div className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"></div>
           <div className="shadow-xl flex flex-col-reverse w-full border-t border-gray-900/10 lg:border-t-0 md:ml-8">
             <Carousel />
@@ -180,7 +180,7 @@ export default function ProjectsPage() {
               <Image
                 src={CorporateGIF}
                 alt="CORPORATE gif"
-                className="w-[300px] self-center"
+                className="self-center"
               />
               <div className="flex items-center mb-4">
                 <h3
