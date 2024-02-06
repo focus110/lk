@@ -96,7 +96,6 @@ export default function ProjectsPage() {
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="relative flex flex-col-reverse lg:grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <div
-            data-aos="fade-left"
             className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"
           ></div>
           <div className=" relative z-[10] md:ml-8">
