@@ -121,7 +121,13 @@ const Carousel = () => {
                     backdropFilter: "blur(16px)",
                   }}
                 ></div>
-                <h3 className="relative text-white text-sm md:text-[15px] lg:text-[12px] xl:text-[15px] stroke-black stroke-1 shadow-sm">
+                <h3
+                  className="relative text-white font-medium text-sm md:text-[15px] lg:text-[12px] xl:text-[15px] stroke-black stroke-1 shadow-sm"
+                  style={{
+                    WebkitTextStroke: "0.3px black",
+                    textStroke: "0.3px black",
+                  }}
+                >
                   {card.title}
                 </h3>
               </div>

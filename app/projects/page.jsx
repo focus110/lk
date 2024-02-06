@@ -102,7 +102,7 @@ export default function ProjectsPage() {
               <Image
                 src={CasapingGIF}
                 alt="Casapring GIF"
-                className="w-[300px] -ml-4 md:-ml-0 sm:h-[400px] sm:max-w-[350px] relative z-[10]"
+                className="w-[300px] -ml-4 md:-ml-0 sm:h-[400px] sm:max-w-[400px] relative z-[10]"
               />
             </div>
           </div>
