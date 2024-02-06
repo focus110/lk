@@ -93,8 +93,8 @@ export default function ProjectsPage() {
   return (
     <div className="relative overflow-hidden bg-[#080808]">
       <Navigation />
-      <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
-        <div className="relative pb-8 grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
+      <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 pt-16 md:pt-0">
+        <div className="md:h-screen relative pb-8 grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <div className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"></div>
           <div className="shadow-xl flex flex-col-reverse w-full border-t border-gray-900/10 lg:border-t-0 md:ml-8">
             <Carousel />
@@ -126,7 +126,7 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden w-full pb-14 ">
+        <div className="md:h-screen relative overflow-hidden w-full pb-14 ">
           <Image
             src={clipsGIF}
             alt="Clips projects"
@@ -173,7 +173,8 @@ export default function ProjectsPage() {
             ))}
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center px-6 pt-2 mx-auto lg:px-8 md:pt-16 lg:pt-16 pb-16">
+
+        <div className="md:h-screen flex flex-col md:flex-row items-center justify-center px-6 pt-2 mx-auto lg:px-8 md:pt-16 lg:pt-16 pb-16">
           <div className="flex flex-col md:flex-row items-center md:gap-24">
             <div className="flex flex-col items-center relative z-10">
               <Image

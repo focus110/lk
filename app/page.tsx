@@ -33,7 +33,7 @@ export default function Home() {
         <Image
           src={`/assets/PHOTO.gif`}
           alt="Clips projects"
-          className="relative z-[2] lg:h-[400px] lg:w-[400px]"
+          className="relative z-[2] lg:h-[300px] lg:w-[300px]"
           width={200}
           height={400}
           loading="lazy"
@@ -44,7 +44,7 @@ export default function Home() {
         <Image
           src={`/assets/COUREUR.gif`}
           alt="Clips projects"
-          className="relative z-[2] lg:h-[400px] lg:w-[400px]"
+          className="relative z-[2] lg:h-[300px] lg:w-[300px]"
           width={200}
           height={400}
           loading="lazy"
