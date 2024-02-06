@@ -93,7 +93,7 @@ export default function ProjectsPage() {
   return (
     <div className="relative overflow-hidden bg-[#080808]">
       <Navigation />
-      <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 pt-16 md:pt-0">
+      <div className="px-6 mx-auto max-w-7xl lg:px-8 pt-16 md:pt-0">
         <div className="md:h-screen relative pb-8 grid items-center grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <div className="bg-[#ffba00] w-[100px]  md:h-[80%] absolute md:bottom-0"></div>
           <div className="shadow-xl flex flex-col-reverse w-full border-t border-gray-900/10 lg:border-t-0 md:ml-8">
@@ -102,7 +102,7 @@ export default function ProjectsPage() {
               <Image
                 src={CasapingGIF}
                 alt="Casapring GIF"
-                className="w-[300px] -ml-4 md:-ml-0 sm:h-[400px] sm:max-w-[400px] relative z-[10]"
+                className="-ml-4 md:-ml-0 sm:h-[400px] sm:max-w-[400px] relative z-[10]"
               />
             </div>
           </div>
@@ -126,14 +126,14 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        <div className="md:h-screen relative overflow-hidden w-full pb-14 ">
+        <div className="relative overflow-hidden w-full pb-14 ">
           <Image
             src={clipsGIF}
             alt="Clips projects"
-            className="sm:m-10 w-[300px] h-[300px] relative z-[2]"
+            className="mx-auto sm:m-10 w-[300px] h-[300px] relative z-[2]"
           />
 
-          <div className="absolute z-[1] bottom-0 left-1/2 -translate-x-1/2 bg-[#00FF00] w-[100px] md:w-[150px] h-[110rem] md:h-full"></div>
+          <div className="absolute z-[1] bottom-0 left-1/2 -translate-x-1/2 bg-[#00FF00] w-[200px] md:w-[150px] h-[110rem] md:h-full"></div>
 
           <div className="relative z-[2] grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {music.map((music, index) => (
@@ -174,13 +174,13 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        <div className="md:h-screen flex flex-col md:flex-row items-center justify-center px-6 pt-2 mx-auto lg:px-8 md:pt-16 lg:pt-16 pb-16">
-          <div className="flex flex-col md:flex-row items-center md:gap-24">
+        <div className="flex flex-col md:flex-row items-center justify-center px-6 mx-auto lg:px-8 pb-16">
+          <div className="flex flex-col md:flex-row items-center md:gap-24 md:mt-[64px]">
             <div className="flex flex-col items-center relative z-10">
               <Image
                 src={CorporateGIF}
                 alt="CORPORATE gif"
-                className="w-[300px] md:w-[400px] h-[450px] self-center"
+                className="w-[300px] self-center"
               />
               <div className="flex items-center mb-4">
                 <h3
@@ -233,17 +233,21 @@ export default function ProjectsPage() {
               </div>
             </div>
 
-            <div className="relative mt-24 ">
-              <div
-                className="w-[140px] bg-[#0006ff] h-[500px] absolute -right-16 -top-16 shadow-md"
-              ></div>
+            <div className="relative mt-[98px] md:mt-0">
+              <div className="w-[300px] bg-[#0006ff] h-[500px] absolute -right-16 -top-16 shadow-md"></div>
 
-             <div className="overflow-hidden rounded-[12px]"   style={{
-            boxShadow:
-              "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.6) 0px 5px 10px",
-            WebkitBoxShadow:
-              "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.6) 0px 5px 10px",
-          }}> <Video currentVideoIndex={currentVideo} /></div>
+              <div
+                className="overflow-hidden rounded-[12px]"
+                style={{
+                  boxShadow:
+                    "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.6) 0px 5px 10px",
+                  WebkitBoxShadow:
+                    "rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.6) 0px 5px 10px",
+                }}
+              >
+                {" "}
+                <Video currentVideoIndex={currentVideo} />
+              </div>
             </div>
           </div>
           <div></div>

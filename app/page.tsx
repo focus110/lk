@@ -11,7 +11,7 @@ const navigation = [
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-[#080808] bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-      <nav className="my-16 animate-fade-in">
+      <nav className="my-16 animate-fade-in z-10">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
@@ -26,14 +26,14 @@ export default function Home() {
       </nav>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
+        className="absolute inset-0 animate-fade-in"
         quantity={300}
       />
       <div className="flex flex-col md:flex-row items-center">
         <Image
           src={`/assets/PHOTO.gif`}
           alt="Clips projects"
-          className="relative z-[2] lg:h-[300px] lg:w-[300px]"
+          className="relative z-[2]"
           width={200}
           height={400}
           loading="lazy"
@@ -44,7 +44,7 @@ export default function Home() {
         <Image
           src={`/assets/COUREUR.gif`}
           alt="Clips projects"
-          className="relative z-[2] lg:h-[300px] lg:w-[300px]"
+          className="relative z-[2]"
           width={200}
           height={400}
           loading="lazy"

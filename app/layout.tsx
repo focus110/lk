@@ -6,16 +6,16 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "Lukasdunmont",
-    template: "%s | Lukasdunmont",
+    default: "Lukasdumont",
+    template: "%s | Lukasdumont",
   },
   description: "Montage video pro",
   openGraph: {
-    title: "Lukasdunmont",
+    title: "Lukasdumont",
     description:
       "Montage video pro",
-    url: "https://Lukasdunmont.fr",
-    siteName: "Lukasdunmont",
+    url: "https://lukasdumont.com",
+    siteName: "Lukasdumont",
     locale: "en-US",
     type: "website",
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Lukasdunmont",
+    title: "Lukasdumont",
     card: "summary_large_image",
   },
   icons: {
