@@ -127,7 +127,7 @@ export default function ProjectsPage() {
         </div>
 
         <div className="relative overflow-hidden w-full pb-14 ">
-          <div className="flex w-[50%] justify-center">
+          <div className="flex md:w-[50%] justify-center">
             <Image
               src={clipsGIF}
               alt="Clips projects"
